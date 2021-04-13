@@ -3,6 +3,13 @@ site_name: YouTube Live Lecture
 # define TOC or order of website-
 nav:
   - Home: index.md
+  - Lecture 06: lec06.md
+  - Lecture 05: lec05.md
+  - Lecture 04: lec04.md
+  - Lecture 03: lec03.md
+  - Lecture 02: lec02.md
+  - Lecture 01: lec01.md
+
 
 site_author: Sunny Bhaveen Chandra
 site_description: >-
@@ -23,7 +30,7 @@ theme:
   language: en
   palette:
     scheme: slate
-    primary: cyan
+    primary: green
     accent: cyan
 
 extra:
