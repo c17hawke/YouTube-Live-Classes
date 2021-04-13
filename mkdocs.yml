@@ -23,8 +23,8 @@ theme:
   language: en
   palette:
     scheme: slate
-    primary: teal
-    accent: teal
+    primary: cyan
+    accent: cyan
 
 extra:
   social:
