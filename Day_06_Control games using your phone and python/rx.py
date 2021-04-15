@@ -41,28 +41,28 @@ def main(host, port):
                     control(signals)
 
                 # forward
-                elif (-4 > g_x) and (-3 < g_y < 3):
+                elif (-3 > g_x) and (-3 < g_y < 3):
                     print("FORWARD")
                     signals = {"signal_release": [Key.space, Key.down, Key.left, Key.right], 
                     "signal_on": Key.up}
                     control(signals)
 
                 # retreat
-                elif (4 < g_x) and (-3 < g_y < 3):
+                elif (3 < g_x) and (-3 < g_y < 3):
                     print("RETREAT")
                     signals = {"signal_release": [Key.up, Key.space, Key.left, Key.right], 
                     "signal_on": Key.down}
                     control(signals)
 
                 # left
-                elif (-3 < g_x < 3) and (-4 > g_y):
+                elif (-3 < g_x < 3) and (-3 > g_y):
                     print("LEFT TURN")
                     signals = {"signal_release": [Key.up, Key.down, Key.space, Key.right], 
                     "signal_on": Key.left}
                     control(signals)
 
                 # right
-                elif (-3 < g_x < 3) and (4 < g_y):
+                elif (-3 < g_x < 3) and (3 < g_y):
                     print("RIGHT TURN")
                     signals = {"signal_release": [Key.up, Key.down, Key.left, Key.space], 
                     "signal_on": Key.right}
