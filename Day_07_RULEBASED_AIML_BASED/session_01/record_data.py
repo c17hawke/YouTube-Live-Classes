@@ -54,7 +54,7 @@ def rule_based_module(gravity_data, csv):
         record_data(signals, csv_file=csv)
 
 def init_csv_file(csv_file):
-    with open(csv_file, "a") as f:
+    with open(csv_file, "w") as f:
         string = "g_x,g_y,TARGET\n"
         f.writelines(string)
 
